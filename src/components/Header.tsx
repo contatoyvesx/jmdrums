@@ -3,6 +3,7 @@ import { useState } from "react";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [logoError, setLogoError] = useState(false);
 
   const navItems = [
     { label: "Início", href: "#inicio" },
@@ -14,9 +15,19 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
-      <div className="container mx-auto px-4 flex items-center justify-between h-16">
-        <a href="#inicio" className="font-heading text-2xl font-bold tracking-wider text-foreground">
-          JM DRUMS <span className="text-muted-foreground font-medium text-lg">ABC</span>
+      <div className="container mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
+        <a href="#inicio" className="flex items-center gap-3 min-w-0">
+          {!logoError && (
+            <img
+              src="/src/assets/Logo fundo transparente.png"
+              alt="Logo JM Drums ABC"
+              className="h-10 w-auto object-contain"
+              onError={() => setLogoError(true)}
+            />
+          )}
+          <span className="font-heading text-lg sm:text-xl md:text-2xl font-bold tracking-wider text-foreground truncate">
+            JM DRUMS <span className="text-muted-foreground font-medium text-base sm:text-lg">ABC</span>
+          </span>
         </a>
 
         {/* Desktop nav */}
@@ -34,7 +45,7 @@ const Header = () => {
 
         {/* Mobile toggle */}
         <button
-          className="md:hidden text-foreground"
+          className="md:hidden text-foreground p-2 -mr-2"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
