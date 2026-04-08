@@ -31,7 +31,7 @@ const HeroSection = () => {
             Ver Produtos
           </a>
           <a
-            href="https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre os produtos da JM Drums ABC"
+            href="https://wa.me/5511947483998?text=Olá! Gostaria de saber mais sobre os produtos da JM Drums ABC"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 bg-whatsapp text-whatsapp-foreground font-heading uppercase tracking-widest text-xs sm:text-sm font-semibold hover:opacity-90 transition-opacity rounded-sm"
