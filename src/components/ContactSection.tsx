@@ -40,21 +40,21 @@ const ContactSection = () => {
             <Instagram className="w-8 h-8 mx-auto mb-3 text-muted-foreground" />
             <h3 className="font-heading text-lg font-semibold text-foreground uppercase">Instagram</h3>
             <a
-              href="https://instagram.com"
+              href="https://instagram.com/jmdrumsabc"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-2 inline-block text-sm text-muted-foreground hover:text-foreground"
             >
-              instagram.com
+              @jmdrumsabc
             </a>
           </div>
           <div className="text-center">
             <Clock className="w-8 h-8 mx-auto mb-3 text-muted-foreground" />
             <h3 className="font-heading text-lg font-semibold text-foreground uppercase">Horário</h3>
             <p className="mt-2 text-sm text-muted-foreground">
-              Fechado no momento
+              Seg a Sáb: 10h às 18h
               <br />
-              Abre às 10:00
+              Domingo: Fechado
             </p>
           </div>
         </div>

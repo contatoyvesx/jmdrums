@@ -19,7 +19,7 @@ const Header = () => {
         <a href="#inicio" className="flex items-center gap-3 min-w-0">
           {!logoError && (
             <img
-              src="/src/assets/Logo fundo transparente.png"
+              src="/src/assets/Logo%20fundo%20transparente.png"
               alt="Logo JM Drums ABC"
               className="h-10 w-auto object-contain"
               onError={() => setLogoError(true)}
