@@ -1,6 +1,9 @@
+import { useState } from "react";
 import heroImage from "@/assets/hero-drums.jpg";
 
 const HeroSection = () => {
+  const [logoError, setLogoError] = useState(false);
+
   return (
     <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       {/* Background image */}
@@ -17,6 +20,14 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto">
+        {!logoError && (
+          <img
+            src="/src/assets/Logo%20fundo%20transparente.png"
+            alt="Logo JM Drums ABC"
+            className="h-24 sm:h-28 md:h-32 w-auto object-contain mx-auto mb-4 sm:mb-6"
+            onError={() => setLogoError(true)}
+          />
+        )}
         <h1 className="font-heading text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-bold text-foreground uppercase tracking-wider animate-fade-in-up leading-tight">
           JM Drums ABC
         </h1>
