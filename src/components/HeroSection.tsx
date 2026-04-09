@@ -3,7 +3,6 @@ import logoImage from "@/assets/Logo fundo transparente.png";
 
 const HeroSection = () => {
   return (
-    <section
 <section
   id="inicio"
   className="relative min-h-screen flex items-start justify-center overflow-hidden pt-16"
