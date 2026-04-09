@@ -19,10 +19,10 @@ const HeroSection = () => {
       </div>
 
       <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto">
-          <img
+<img
   src={logoImage}
   alt="Logo JM Drums ABC"
-  className="mx-auto mb-6 w-[260px] sm:w-[320px] md:w-[420px] lg:w-[520px] h-auto object-contain"
+  className="mx-auto mb-4 mt-[-60px] w-[320px] sm:w-[420px] md:w-[560px] lg:w-[700px] h-auto object-contain"
 />
 
         <p
