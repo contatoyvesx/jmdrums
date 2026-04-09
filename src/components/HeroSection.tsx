@@ -19,15 +19,11 @@ const HeroSection = () => {
       </div>
 
       <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto">
-        <img
-          src={logoImage}
-          alt="Logo JM Drums ABC"
-          className="mx-auto mb-6 w-[180px] sm:w-[220px] md:w-[260px] lg:w-[300px] h-auto object-contain"
-        />
-
-        <h1 className="font-heading text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-bold text-foreground uppercase tracking-wider animate-fade-in-up leading-tight">
-          JM Drums ABC
-        </h1>
+          <img
+  src={logoImage}
+  alt="Logo JM Drums ABC"
+  className="mx-auto mb-6 w-[260px] sm:w-[320px] md:w-[420px] lg:w-[520px] h-auto object-contain"
+/>
 
         <p
           className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl text-muted-foreground font-body max-w-2xl mx-auto animate-fade-in-up"
