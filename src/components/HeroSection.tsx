@@ -1,8 +1,9 @@
 import { useState } from "react";
 import heroImage from "@/assets/hero-drums.jpg";
+import logoImage from "@/assets/logo-jmdrums.svg";
 
 const HeroSection = () => {
-  const [logoSrc, setLogoSrc] = useState("/src/assets/Logo%20fundo%20transparente.png");
+  const [showLogo, setShowLogo] = useState(true);
 
   return (
     <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
@@ -20,12 +21,14 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto">
-        <img
-          src={logoSrc}
-          alt="Logo JM Drums ABC"
-          className="h-24 sm:h-28 md:h-32 w-auto object-contain mx-auto mb-4 sm:mb-6"
-          onError={() => setLogoSrc("/placeholder.svg")}
-        />
+        {showLogo && (
+          <img
+            src={logoImage}
+            alt="Logo JM Drums ABC"
+            className="h-24 sm:h-28 md:h-32 lg:h-36 w-auto object-contain mx-auto mb-4 sm:mb-6"
+            onError={() => setShowLogo(false)}
+          />
+        )}
         <h1 className="font-heading text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-bold text-foreground uppercase tracking-wider animate-fade-in-up leading-tight">
           JM Drums ABC
         </h1>
