@@ -4,9 +4,10 @@ import logoImage from "@/assets/Logo fundo transparente.png";
 const HeroSection = () => {
   return (
     <section
-      id="inicio"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16"
-    >
+<section
+  id="inicio"
+  className="relative min-h-screen flex items-start justify-center overflow-hidden pt-16"
+>
       <div className="absolute inset-0">
         <img
           src={heroImage}
@@ -18,7 +19,7 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-background/70" />
       </div>
 
-      <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto">
+      <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto pt-8 sm:pt-12 md:pt-16">
 <img
   src={logoImage}
   alt="Logo JM Drums ABC"
