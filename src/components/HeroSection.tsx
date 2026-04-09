@@ -22,7 +22,7 @@ const HeroSection = () => {
 <img
   src={logoImage}
   alt="Logo JM Drums ABC"
-  className="mx-auto mb-4 mt-[-60px] w-[320px] sm:w-[420px] md:w-[560px] lg:w-[700px] h-auto object-contain"
+  className="mx-auto mb-4 mt-[-120px] w-[320px] sm:w-[420px] md:w-[560px] lg:w-[700px] h-auto object-contain"
 />
 
         <p
