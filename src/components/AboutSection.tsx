@@ -4,7 +4,7 @@ const features = [
   { icon: Drum, title: "Especialistas", text: "Loja de instrumentos de percussão em São Caetano do Sul" },
   { icon: ShieldCheck, title: "5,0 no Google", text: "Atendimento de excelência para bateristas e percussionistas" },
   { icon: Wrench, title: "Assistência", text: "Conserto e manutenção profissional" },
-  { icon: MapPin, title: "Região ABC", text: "R. Biguá, 130 - Santa Maria (9C9X+MX)" },
+  { icon: MapPin, title: "Região ABC", text: "R. Biguá, 130" },
 ];
 
 const AboutSection = () => {
